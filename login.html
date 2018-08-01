@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Login</title>
+<script>
+function validator()
+{
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+if(x=="" || y=="")
+{
+alert ("please enter data");
+return false;
+}
+else
+{
+alert("data is getting submitted"); 
+return true;
+}
+}
+</script>
+<body bgcolor="cyan">
+<center><h1 style="color:yellow">LOGIN FORM</h1></center>
+<hr>
+<form action="www.yahoo.com" OnSubmit="return validator()">
+<center>Name:<input type="text" name="name" placeholder="Give user name" id="t1">
+<br>
+<center>Password:<input type="password" name="pswd" placeholder="Give password" id="t2">
+<br>
+<center>Age:<input type="number" min="1" max="99">
+<br>
+<center>DOB:<input type="date">
+<br>
+<center><input type="submit" name="submit">
+<center><input type="Reset" name="reset">
+</form>
+</head>
+</body>
+</html>
